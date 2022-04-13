@@ -1,8 +1,9 @@
+import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
 
 class GetStartedPage extends StatelessWidget {
-  const GetStartedPage({ Key? key }) : super(key: key);
+  const GetStartedPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +15,9 @@ class GetStartedPage extends StatelessWidget {
             height: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(
-                  'assets/image_get_started.png'
-                  ), 
-                  fit: BoxFit.cover,
-                ),
+                image: AssetImage('assets/image_get_started.png'),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Center(
@@ -32,7 +31,9 @@ class GetStartedPage extends StatelessWidget {
                     fontWeight: semiBold,
                   ),
                 ),
-                const SizedBox(height: 10,),
+                const SizedBox(
+                  height: 10,
+                ),
                 Text(
                   'Explore new world with us and let\nyourself get an amazing experiences',
                   style: whiteTextStyle.copyWith(
@@ -41,32 +42,20 @@ class GetStartedPage extends StatelessWidget {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Container(
-                  margin: const EdgeInsets.only(top: 50, bottom: 80,),
+                CustomButton(
+                  title: 'Get Started',
                   width: 220,
-                  height: 55,
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: kPrimaryColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(defaultRadius),
-                      ),
-                    ),
-                    onPressed: (){
-                      Navigator.pushNamed(context, '/sign-up');
-                    }, 
-                    child: Text(
-                      'Get Started',
-                      style: whiteTextStyle.copyWith(
-                        fontSize: 18,
-                        fontWeight: medium,
-                      ),
-                    )
-                    ),
-                )
+                  margin: const EdgeInsets.only(
+                    top: 50,
+                    bottom: 50,
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/sign-up');
+                  },
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

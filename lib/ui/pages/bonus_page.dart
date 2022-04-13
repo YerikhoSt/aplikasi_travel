@@ -1,13 +1,13 @@
+import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
 
 class BonusPage extends StatelessWidget {
-  const BonusPage({ Key? key }) : super(key: key);
+  const BonusPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
-    Widget bonusCard(){
+    Widget bonusCard() {
       return Container(
         width: 310,
         height: 221,
@@ -15,7 +15,7 @@ class BonusPage extends StatelessWidget {
           image: DecorationImage(
             image: AssetImage(
               'assets/image_card.png',
-              ),
+            ),
           ),
           boxShadow: [
             BoxShadow(
@@ -73,12 +73,12 @@ class BonusPage extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(height: 41,),
+              const SizedBox(
+                height: 41,
+              ),
               Text(
                 'Balance',
-                style: whiteTextStyle.copyWith(
-                  fontWeight: light
-                ),
+                style: whiteTextStyle.copyWith(fontWeight: light),
               ),
               Text(
                 'IDR 280.000.000',
@@ -93,7 +93,7 @@ class BonusPage extends StatelessWidget {
       );
     }
 
-    Widget title () {
+    Widget title() {
       return Container(
         margin: EdgeInsets.only(top: 80),
         child: Text(
@@ -106,7 +106,7 @@ class BonusPage extends StatelessWidget {
       );
     }
 
-    Widget subTitle () {
+    Widget subTitle() {
       return Container(
         margin: const EdgeInsets.only(top: 10),
         child: Text(
@@ -121,43 +121,22 @@ class BonusPage extends StatelessWidget {
     }
 
     Widget startButton() {
-      return Container(
+      return CustomButton(
+        title: 'Start Fly Now',
         width: 220,
-        height: 55,
         margin: const EdgeInsets.only(top: 50),
-        child: TextButton(
-        onPressed:(){
-          Navigator.pushNamed(context, 'main-page');
+        onPressed: () {
+          Navigator.pushNamed(context, '/main-page');
         },
-        style: TextButton.styleFrom(
-          backgroundColor: kPrimaryColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(defaultRadius),
-          )
-        ), 
-        child: Text(
-          'Start Fly Now',
-          style: whiteTextStyle.copyWith(
-            fontSize: 18,
-            fontWeight: medium,
-          ),
-          ),
-        ),
       );
     }
-  
 
     return Scaffold(
       backgroundColor: kBackgroundColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            bonusCard(),
-            title(),
-            subTitle(),
-            startButton()
-          ],
+          children: [bonusCard(), title(), subTitle(), startButton()],
         ),
       ),
     );
