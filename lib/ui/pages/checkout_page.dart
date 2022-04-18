@@ -1,3 +1,4 @@
+import 'package:aplikasi_travel/ui/pages/success_checkout_page.dart';
 import 'package:aplikasi_travel/ui/widgets/booking_detail_item.dart';
 import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -313,10 +314,19 @@ class CheckoutPage extends StatelessWidget {
     );
   }
 
-  Widget payButton() {
+  Widget payButton(BuildContext context) {
     return CustomButton(
       title: 'Pay Now',
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (BuildContext context) {
+              return SuccessCheckoutPage();
+            },
+          ),
+        );
+      },
       margin: EdgeInsets.only(
         top: 25,
       ),
@@ -353,7 +363,7 @@ class CheckoutPage extends StatelessWidget {
           route(),
           bookingDetails(),
           paymentDetails(),
-          payButton(),
+          payButton(context),
           tacButton(),
         ],
       ),
