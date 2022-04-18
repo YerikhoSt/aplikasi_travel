@@ -3,6 +3,7 @@ import 'package:aplikasi_travel/ui/widgets/destination_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../shared/theme.dart';
+import 'detail_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -48,7 +49,7 @@ class HomePage extends StatelessWidget {
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: const AssetImage(
+                  image: AssetImage(
                     'assets/image_profile.png',
                   ),
                 ),
@@ -65,7 +66,7 @@ class HomePage extends StatelessWidget {
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: <Widget>[
+            children: const <Widget>[
               DestinationCard(
                 imageUrl: 'assets/image_destination1.png',
                 name: 'Lake Ciliwung',
@@ -121,30 +122,70 @@ class HomePage extends StatelessWidget {
               ),
             ),
             DestinationTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailPage(),
+                  ),
+                );
+              },
               name: 'Danau Beratan',
               city: 'Singaraja',
               imageUrl: 'assets/image_destination6.png',
               rating: 4.5,
             ),
             DestinationTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailPage(),
+                  ),
+                );
+              },
               name: 'Sydney Opera',
               city: 'Australia',
               imageUrl: 'assets/image_destination7.png',
               rating: 5.0,
             ),
             DestinationTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailPage(),
+                  ),
+                );
+              },
               name: 'Roma',
               city: 'Italy',
               imageUrl: 'assets/image_destination8.png',
               rating: 4.9,
             ),
             DestinationTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailPage(),
+                  ),
+                );
+              },
               name: 'Payung Teduh',
               city: 'Singapore',
               imageUrl: 'assets/image_destination9.png',
               rating: 4.7,
             ),
             DestinationTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailPage(),
+                  ),
+                );
+              },
               name: 'Hill Hey',
               city: 'Monaco',
               imageUrl: 'assets/image_destination10.png',

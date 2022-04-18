@@ -30,21 +30,21 @@ class _SignUpPageState extends State<SignUpPage> {
 
     Widget inputSection() {
       Widget nameInput() {
-        return CustomTextFormField(
+        return const CustomTextFormField(
           title: 'Full Name',
           hintText: 'Your Full Name',
         );
       }
 
       Widget emailInput() {
-        return CustomTextFormField(
+        return const CustomTextFormField(
           title: 'Email Address',
           hintText: 'Your Email',
         );
       }
 
       Widget passwordInput() {
-        return CustomTextFormField(
+        return const CustomTextFormField(
           title: 'Passwordddd',
           hintText: 'Your Password',
           obscureText: true,
@@ -52,7 +52,7 @@ class _SignUpPageState extends State<SignUpPage> {
       }
 
       Widget hobbyInput() {
-        return CustomTextFormField(
+        return const CustomTextFormField(
           title: 'Hobby',
           hintText: 'Your Hobby',
         );

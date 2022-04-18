@@ -1,3 +1,4 @@
+import 'package:aplikasi_travel/ui/pages/choose_seat.dart';
 import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
 import 'package:aplikasi_travel/ui/widgets/interest_item.dart';
 import 'package:aplikasi_travel/ui/widgets/photos_item.dart';
@@ -10,8 +11,8 @@ class DetailPage extends StatelessWidget {
   Widget backgroundImage() {
     return Container(
       width: double.infinity,
-      height: 320,
-      decoration: BoxDecoration(
+      height: 280,
+      decoration: const BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage(
@@ -25,7 +26,7 @@ class DetailPage extends StatelessWidget {
   Widget customShadow() {
     return Container(
       width: double.infinity,
-      height: 164,
+      height: 134,
       margin: const EdgeInsets.only(
         top: 160,
       ),
@@ -42,7 +43,7 @@ class DetailPage extends StatelessWidget {
     );
   }
 
-  Widget content() {
+  Widget content(BuildContext context) {
     return Container(
       width: double.infinity,
       margin: EdgeInsets.symmetric(
@@ -54,10 +55,10 @@ class DetailPage extends StatelessWidget {
           Container(
             width: 108,
             height: 24,
-            margin: EdgeInsets.only(
+            margin: const EdgeInsets.only(
               top: 25,
             ),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
                   'assets/icon_emblem.png',
@@ -68,7 +69,7 @@ class DetailPage extends StatelessWidget {
           // TITLE
           Container(
             margin: const EdgeInsets.only(
-              top: 156,
+              top: 126,
             ),
             child: Row(
               children: [
@@ -100,7 +101,7 @@ class DetailPage extends StatelessWidget {
                     Container(
                       width: 20,
                       height: 20,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
                             'assets/icon_star.png',
@@ -123,10 +124,10 @@ class DetailPage extends StatelessWidget {
           // DESCRIPTION
           Container(
             width: double.infinity,
-            margin: EdgeInsets.only(
+            margin: const EdgeInsets.only(
               top: 20,
             ),
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 20,
               vertical: 25,
             ),
@@ -170,7 +171,7 @@ class DetailPage extends StatelessWidget {
                   height: 6,
                 ),
                 Row(
-                  children: [
+                  children: const [
                     PhotosItem(
                       imageUrl: 'assets/image_photo1.png',
                     ),
@@ -198,7 +199,7 @@ class DetailPage extends StatelessWidget {
                   height: 6,
                 ),
                 Row(
-                  children: [
+                  children: const [
                     InterestItem(
                       text: 'Kids Text',
                     ),
@@ -211,7 +212,7 @@ class DetailPage extends StatelessWidget {
                   height: 5,
                 ),
                 Row(
-                  children: [
+                  children: const [
                     InterestItem(
                       text: 'City Museum',
                     ),
@@ -227,7 +228,7 @@ class DetailPage extends StatelessWidget {
           // PRICE
           Container(
             width: double.infinity,
-            margin: EdgeInsets.symmetric(
+            margin: const EdgeInsets.symmetric(
               vertical: 25,
             ),
             child: Row(
@@ -259,7 +260,16 @@ class DetailPage extends StatelessWidget {
                 // BUTTON
                 CustomButton(
                   title: 'Book Now',
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) {
+                          return ChooseSeatPage();
+                        },
+                      ),
+                    );
+                  },
                   width: 160,
                 ),
               ],
@@ -279,7 +289,7 @@ class DetailPage extends StatelessWidget {
           children: [
             backgroundImage(),
             customShadow(),
-            content(),
+            content(context),
           ],
         ),
       ),

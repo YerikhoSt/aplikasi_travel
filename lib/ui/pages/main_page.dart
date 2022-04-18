@@ -9,7 +9,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget buildContent() {
-      return HomePage();
+      return const HomePage();
     }
 
     Widget customBottomNavigation() {
@@ -29,7 +29,7 @@ class MainPage extends StatelessWidget {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
+            children: const [
               customBottomNavigationItem(
                 imageUrl: 'assets/icon_home.png',
                 isSelected: true,

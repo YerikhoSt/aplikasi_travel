@@ -12,7 +12,7 @@ class BonusPage extends StatelessWidget {
         width: 310,
         height: 221,
         decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage(
               'assets/image_card.png',
             ),
@@ -56,7 +56,7 @@ class BonusPage extends StatelessWidget {
                     width: 24,
                     height: 24,
                     margin: const EdgeInsets.only(right: 6),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(
                           'assets/icon_plane.png',
@@ -95,7 +95,7 @@ class BonusPage extends StatelessWidget {
 
     Widget title() {
       return Container(
-        margin: EdgeInsets.only(top: 80),
+        margin: const EdgeInsets.only(top: 80),
         child: Text(
           'Big Bonus 🎉',
           style: blackTextStyle.copyWith(
