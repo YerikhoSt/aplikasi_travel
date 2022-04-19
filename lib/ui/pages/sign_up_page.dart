@@ -45,7 +45,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
       Widget passwordInput() {
         return const CustomTextFormField(
-          title: 'Passwordddd',
+          title: 'Password',
           hintText: 'Your Password',
           obscureText: true,
         );
@@ -99,7 +99,7 @@ class _SignUpPageState extends State<SignUpPage> {
         alignment: Alignment.center,
         margin: const EdgeInsets.only(
           top: 50,
-          bottom: 73,
+          bottom: 10,
         ),
         child: Text(
           'Terms and Conditions',

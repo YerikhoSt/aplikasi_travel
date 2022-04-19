@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "306511316022",
+    "project_id": "airplane-7cd99",
+    "storage_bucket": "airplane-7cd99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306511316022:android:cf53ab6ad470742bbd8497",
+        "android_client_info": {
+          "package_name": "com.yerikho.aplikasi_travel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306511316022-v3ldf8m53gf5iei9f2qmdi2att0gkso0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCviprAQpQ2CbsOarElGG74eQXpq5_s_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306511316022-v3ldf8m53gf5iei9f2qmdi2att0gkso0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "306511316022-o21ecth32qbqcmrnqq4ovveur1vtvqie.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.airplane"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
