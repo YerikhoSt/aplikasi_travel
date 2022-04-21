@@ -2,7 +2,7 @@ import 'package:aplikasi_travel/ui/widgets/destination_card.dart';
 import 'package:aplikasi_travel/ui/widgets/destination_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 import 'detail_page.dart';
 
 class HomePage extends StatelessWidget {

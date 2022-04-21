@@ -3,7 +3,7 @@ import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
 import 'package:aplikasi_travel/ui/widgets/interest_item.dart';
 import 'package:aplikasi_travel/ui/widgets/photos_item.dart';
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({Key? key}) : super(key: key);

@@ -2,7 +2,7 @@ import 'package:aplikasi_travel/ui/pages/success_checkout_page.dart';
 import 'package:aplikasi_travel/ui/widgets/booking_detail_item.dart';
 import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class CheckoutPage extends StatelessWidget {
   const CheckoutPage({Key? key}) : super(key: key);

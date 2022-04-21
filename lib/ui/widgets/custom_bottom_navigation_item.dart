@@ -1,7 +1,7 @@
 import 'package:aplikasi_travel/cubit/page_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class customBottomNavigationItem extends StatelessWidget {
   final int index;

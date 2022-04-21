@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:aplikasi_travel/ui/pages/get_started_page.dart';
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);

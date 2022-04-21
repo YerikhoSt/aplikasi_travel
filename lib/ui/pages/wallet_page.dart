@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class WalletPage extends StatelessWidget {
   const WalletPage({Key? key}) : super(key: key);

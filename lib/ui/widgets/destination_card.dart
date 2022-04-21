@@ -1,6 +1,6 @@
 import 'package:aplikasi_travel/ui/pages/detail_page.dart';
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class DestinationCard extends StatelessWidget {
   final String name;

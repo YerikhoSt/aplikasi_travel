@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class SeatItem extends StatelessWidget {
   // 0. Available 1. Selected 2. Unavailable

@@ -2,7 +2,7 @@ import 'package:aplikasi_travel/ui/pages/checkout_page.dart';
 import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
 import 'package:aplikasi_travel/ui/widgets/seat_item.dart';
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:aplikasi_travel/shared/theme.dart';
 
 class ChooseSeatPage extends StatelessWidget {
   const ChooseSeatPage({Key? key}) : super(key: key);
