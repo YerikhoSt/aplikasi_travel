@@ -28,7 +28,7 @@ class DestinationCard extends StatelessWidget {
         margin: EdgeInsets.only(
           left: defaultMargin,
         ),
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: kWhiteColor,
@@ -57,7 +57,7 @@ class DestinationCard extends StatelessWidget {
                   height: 30,
                   decoration: BoxDecoration(
                     color: kWhiteColor,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(18),
                     ),
                   ),
@@ -68,7 +68,7 @@ class DestinationCard extends StatelessWidget {
                       Container(
                         width: 20,
                         height: 20,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
                               'assets/icon_star.png',

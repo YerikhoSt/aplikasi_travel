@@ -273,7 +273,7 @@ class DetailPage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (BuildContext context) {
-                          return ChooseSeatPage();
+                          return const ChooseSeatPage();
                         },
                       ),
                     );

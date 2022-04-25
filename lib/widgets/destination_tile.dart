@@ -23,10 +23,10 @@ class DestinationTile extends StatelessWidget {
         );
       },
       child: Container(
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           top: 16,
         ),
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: kWhiteColor,
           borderRadius: BorderRadius.circular(18),
@@ -36,7 +36,7 @@ class DestinationTile extends StatelessWidget {
             Container(
               width: 70,
               height: 70,
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 right: 16,
               ),
               decoration: BoxDecoration(
@@ -80,9 +80,9 @@ class DestinationTile extends StatelessWidget {
                 Container(
                   width: 20,
                   height: 20,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(
+                      image: const AssetImage(
                         'assets/icon_star.png',
                       ),
                     ),

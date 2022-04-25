@@ -10,7 +10,7 @@ class PhotosItem extends StatelessWidget {
     return Container(
       width: 65,
       height: 65,
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         right: 15,
       ),
       decoration: BoxDecoration(

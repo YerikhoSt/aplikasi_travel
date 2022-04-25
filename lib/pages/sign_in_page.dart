@@ -69,12 +69,12 @@ class _SignInPageState extends State<SignInPage> {
           },
           builder: (context, state) {
             if (state is AuthLoading) {
-              return Center(
+              return const Center(
                 child: CircularProgressIndicator(),
               );
             }
             return CustomButton(
-              title: "Log In",
+              title: 'Log In',
               margin: const EdgeInsets.only(
                 top: 20,
               ),
