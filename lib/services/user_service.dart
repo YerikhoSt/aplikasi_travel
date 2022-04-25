@@ -1,4 +1,4 @@
-import 'package:aplikasi_travel/models/user_model.dart';
+import 'package:aplikasi_travel/menus/user_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class UserService {

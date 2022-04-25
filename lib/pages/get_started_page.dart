@@ -1,6 +1,6 @@
-import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
+import 'package:aplikasi_travel/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:aplikasi_travel/shared/theme.dart';
+import 'package:aplikasi_travel/utils/theme.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({Key? key}) : super(key: key);

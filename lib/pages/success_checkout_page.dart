@@ -1,5 +1,5 @@
-import 'package:aplikasi_travel/shared/theme.dart';
-import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
+import 'package:aplikasi_travel/utils/theme.dart';
+import 'package:aplikasi_travel/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class SuccessCheckoutPage extends StatelessWidget {

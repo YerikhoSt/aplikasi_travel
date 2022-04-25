@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:aplikasi_travel/shared/theme.dart';
+import 'package:aplikasi_travel/utils/theme.dart';
 
-class TransactionPage extends StatelessWidget {
-  const TransactionPage({Key? key}) : super(key: key);
+class WalletPage extends StatelessWidget {
+  const WalletPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Text(
-          'Transaction Page Not Found',
+          'Wallet Pager Not Found',
           style: blackTextStyle,
         ),
       ),

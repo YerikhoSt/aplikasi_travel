@@ -1,4 +1,4 @@
-import 'package:aplikasi_travel/models/user_model.dart';
+import 'package:aplikasi_travel/menus/user_model.dart';
 import 'package:aplikasi_travel/services/user_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

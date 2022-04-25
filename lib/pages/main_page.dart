@@ -1,12 +1,12 @@
-import 'package:aplikasi_travel/cubit/page_cubit.dart';
-import 'package:aplikasi_travel/ui/pages/home_page.dart';
-import 'package:aplikasi_travel/ui/pages/setting_page.dart';
-import 'package:aplikasi_travel/ui/pages/transacation_page.dart';
-import 'package:aplikasi_travel/ui/pages/wallet_page.dart';
-import 'package:aplikasi_travel/ui/widgets/custom_bottom_navigation_item.dart';
+import 'package:aplikasi_travel/auth/page_cubit.dart';
+import 'package:aplikasi_travel/pages/home_page.dart';
+import 'package:aplikasi_travel/pages/setting_page.dart';
+import 'package:aplikasi_travel/pages/transacation_page.dart';
+import 'package:aplikasi_travel/pages/wallet_page.dart';
+import 'package:aplikasi_travel/widgets/custom_bottom_navigation_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:aplikasi_travel/shared/theme.dart';
+import 'package:aplikasi_travel/utils/theme.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);

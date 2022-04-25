@@ -1,8 +1,8 @@
-import 'package:aplikasi_travel/ui/pages/checkout_page.dart';
-import 'package:aplikasi_travel/ui/widgets/custom_button.dart';
-import 'package:aplikasi_travel/ui/widgets/seat_item.dart';
+import 'package:aplikasi_travel/pages/checkout_page.dart';
+import 'package:aplikasi_travel/widgets/custom_button.dart';
+import 'package:aplikasi_travel/widgets/seat_item.dart';
 import 'package:flutter/material.dart';
-import 'package:aplikasi_travel/shared/theme.dart';
+import 'package:aplikasi_travel/utils/theme.dart';
 
 class ChooseSeatPage extends StatelessWidget {
   const ChooseSeatPage({Key? key}) : super(key: key);
@@ -191,9 +191,11 @@ class ChooseSeatPage extends StatelessWidget {
               children: [
                 SeatItem(
                   status: 2,
+                  id: 'A1',
                 ),
                 SeatItem(
                   status: 2,
+                  id: 'B1',
                 ),
                 Container(
                   width: 45,
@@ -209,9 +211,11 @@ class ChooseSeatPage extends StatelessWidget {
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'C1',
                 ),
                 SeatItem(
                   status: 2,
+                  id: 'D1',
                 ),
               ],
             ),
@@ -224,9 +228,11 @@ class ChooseSeatPage extends StatelessWidget {
               children: [
                 SeatItem(
                   status: 0,
+                  id: 'A2',
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'B2',
                 ),
                 Container(
                   width: 45,
@@ -242,9 +248,11 @@ class ChooseSeatPage extends StatelessWidget {
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'C2',
                 ),
                 SeatItem(
                   status: 2,
+                  id: 'D2',
                 ),
               ],
             ),
@@ -257,9 +265,11 @@ class ChooseSeatPage extends StatelessWidget {
               children: [
                 SeatItem(
                   status: 1,
+                  id: 'A3',
                 ),
                 SeatItem(
                   status: 1,
+                  id: 'B3',
                 ),
                 Container(
                   width: 45,
@@ -275,9 +285,11 @@ class ChooseSeatPage extends StatelessWidget {
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'C3',
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'D3',
                 ),
               ],
             ),
@@ -290,9 +302,11 @@ class ChooseSeatPage extends StatelessWidget {
               children: [
                 SeatItem(
                   status: 0,
+                  id: 'A4',
                 ),
                 SeatItem(
                   status: 2,
+                  id: 'B4',
                 ),
                 Container(
                   width: 45,
@@ -308,9 +322,11 @@ class ChooseSeatPage extends StatelessWidget {
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'C4',
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'D4',
                 ),
               ],
             ),
@@ -323,9 +339,11 @@ class ChooseSeatPage extends StatelessWidget {
               children: [
                 SeatItem(
                   status: 0,
+                  id: 'A5',
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'B5',
                 ),
                 Container(
                   width: 45,
@@ -341,9 +359,11 @@ class ChooseSeatPage extends StatelessWidget {
                 ),
                 SeatItem(
                   status: 2,
+                  id: 'C5',
                 ),
                 SeatItem(
                   status: 0,
+                  id: 'D5',
                 ),
               ],
             ),
